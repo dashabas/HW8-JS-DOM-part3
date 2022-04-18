@@ -1,17 +1,15 @@
-const wrapper = document.querySelector('.wrapper');
+const wrapperTaskList = document.querySelector('.wrapper');
 const taskInput = document.querySelector('#task_input');
 const taskList = document.querySelector('.list');
 
 function addTask() {
-    let liTask = document.createElement('li');
-    liTask.dataset.action = 'change-task-status';
-    if (taskInput.value === '') {
-        liTask = '';
-    } else {
+    if (taskInput.value !== '') {
+        let liTask = document.createElement('li');
+        liTask.dataset.action = 'change-task-status';
         liTask.innerHTML = `${taskInput.value} <button class="btn_delete" data-action="delete-task">Удалить</button>`;
+        taskInput.value = '';
+        taskList.append(liTask);
     }
-    taskInput.value = '';
-    taskList.append(liTask);
 }
 
 function changeTaskStatus(element) {
@@ -24,7 +22,7 @@ function deleteTask(element) {
     }
 }
 
-wrapper.addEventListener('click', (event) => {
+wrapperTaskList.addEventListener('click', (event) => {
     let action = event.target.dataset.action;
     let item = event.target;
     switch (action) {

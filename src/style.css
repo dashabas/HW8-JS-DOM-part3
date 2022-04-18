@@ -1,32 +1,32 @@
-*{
+* {
     margin: 0;
     padding: 0;
     list-style: none;
 }
-.container{
+.container {
     max-width: 1000px;
     width: 100%;
     margin: auto;
     padding-top: 50px;
 }
-.input_block{
+.input_block {
     margin-bottom: 30px;
     display: flex;
     justify-content: space-between;
 }
-#task_input{
+#task_input {
     max-width: 850px;
     width: 100%;
     padding: 10px;
     font-size: larger;
     border: 1px solid blue;
 }
-#task_input:focus{
+#task_input:focus {
     border: 1px solid yellow;
     outline: 3px solid yellow;
     color: blue;
 }
-.btn{
+.btn {
     padding: 10px;
     font-size: larger;
     background-color: yellow;
@@ -35,7 +35,7 @@
     transition: 0.5s;
     cursor: pointer;
 }
-.btn_delete{
+.btn_delete {
     margin-left: 600px;
     padding: 7px;
     font-size: medium;
@@ -45,15 +45,15 @@
     transition: 0.5s;
     cursor: pointer;
 }
-.btn_delete:hover{
+.btn_delete:hover {
     background-color: blue;
     color: yellow;
 }
-.btn:hover{
+.btn:hover {
     background-color: blue;
     color: yellow;
 }
-li{
+li {
     font-size: x-large;
     font-family: sans-serif;
     color: blue;
@@ -64,10 +64,10 @@ li{
     justify-content: space-between;
     align-items: center;
 }
-.done_task{
+.done_task {
     background-color: lime;
 }
-h1{
+h1 {
     font-size: xx-large;
     font-family: sans-serif;
     color: blue;
